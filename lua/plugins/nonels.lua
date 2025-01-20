@@ -15,6 +15,9 @@ return {
     },
     {
         "nvimtools/none-ls.nvim",
+        dependencies = {
+            "nvimtools/none-ls-extras.nvim",
+        },
         config = function()
             local null_ls = require("null-ls")
             null_ls.setup({
@@ -23,8 +26,8 @@ return {
 
                     null_ls.builtins.formatting.prettierd, -- Angular, CSS, Flow, GraphQL, HTML,
                     -- JSON, JSX, JavaScript, LESS, Markdown, SCSS, TypeScript, Vue, YAML
-                    --
-                    null_ls.builtins.diagnostics.eslint_d, -- JavaScript
+
+                    require("none-ls.diagnostics.eslint_d"), -- JavaScript
 
                     null_ls.builtins.formatting.isort, -- Python
                     null_ls.builtins.formatting.black, -- Python
