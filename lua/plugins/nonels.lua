@@ -26,8 +26,8 @@ return {
                     --
                     null_ls.builtins.diagnostics.eslint_d, -- JavaScript
 
-                    null_ls.builins.formatting.isort, -- Python
-                    null_ls.builins.formatting.black, -- Python
+                    null_ls.builtins.formatting.isort, -- Python
+                    null_ls.builtins.formatting.black, -- Python
                 },
             })
             local opts = { noremap = true, silent = true }
