@@ -1,4 +1,4 @@
-vim.opt.mouse = ""
+vim.opt.mouse = "a"
 
 vim.opt.clipboard = "unnamedplus"
 vim.opt.completeopt = { "menu", "menuone", "noselect" }
